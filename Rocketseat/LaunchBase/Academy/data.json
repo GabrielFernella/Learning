@@ -1,0 +1,46 @@
+{
+  "members": [
+    {
+      "avatar_url": "https://scontent-gru2-2.xx.fbcdn.net/v/t1.0-0/p526x296/74224156_107593637363449_8240073290576560128_n.jpg?_nc_cat=100&_nc_sid=8bfeb9&_nc_eui2=AeGxW8KnNTfTWsDlP2Rry81CU3MY21erTWhTcxjbV6tNaIplqtG9Srp9CNI41AF2F9_Pej2oSvlQINYfQQ344O54&_nc_ohc=37aFnQVHOEgAX-YbhSU&_nc_ht=scontent-gru2-2.xx&_nc_tp=6&oh=9c05b6bf6be1f14c5a8953848f8d69cd&oe=5F494F42",
+      "name": "Gabriel Fernella",
+      "email": "fernelladev@gmail.com",
+      "birth": null,
+      "gender": "M",
+      "blood": "A+",
+      "weight": "64",
+      "height": "162",
+      "id": 1
+    },
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "name": "Montana",
+      "email": "fernelladev@gmail.com",
+      "birth": 1263340800000,
+      "gender": "F",
+      "blood": "A+",
+      "weight": "55",
+      "height": "160",
+      "id": 2
+    }
+  ],
+  "instructors": [
+    {
+      "id": 2,
+      "name": "Camila Lopes",
+      "avatar_url": "https://scontent-gru2-2.xx.fbcdn.net/v/t1.0-0/p526x296/74224156_107593637363449_8240073290576560128_n.jpg?_nc_cat=100&_nc_sid=8bfeb9&_nc_eui2=AeGxW8KnNTfTWsDlP2Rry81CU3MY21erTWhTcxjbV6tNaIplqtG9Srp9CNI41AF2F9_Pej2oSvlQINYfQQ344O54&_nc_ohc=37aFnQVHOEgAX-YbhSU&_nc_ht=scontent-gru2-2.xx&_nc_tp=6&oh=9c05b6bf6be1f14c5a8953848f8d69cd&oe=5F494F42",
+      "birth": 876873600000,
+      "created_at": 1596201961347,
+      "services": "Enfermeira, Escritora, Goida Linda",
+      "gender": "F"
+    },
+    {
+      "id": 3,
+      "name": "Fabiana do carai",
+      "avatar_url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "birth": 1528156800000,
+      "created_at": 1596222033507,
+      "services": "Enche o saco, Chata",
+      "gender": "F"
+    }
+  ]
+}

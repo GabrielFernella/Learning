@@ -1,0 +1,31 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Gabriel Santos",
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "birth": 877305600000,
+      "gender": "M",
+      "services": "Aprender, viver, amar",
+      "created_at": 1592146529719
+    },
+    {
+      "id": "2",
+      "name": "Camila Lopes de Oliveira",
+      "avatar_url": "http://teste.com",
+      "birth": 876873600000,
+      "gender": "F",
+      "services": "Comer",
+      "created_at": 1592164101278
+    },
+    {
+      "id": 3,
+      "name": "Camila Lopes",
+      "avatar_url": "http://teste.com",
+      "birth": 1264118400000,
+      "gender": "F",
+      "services": "Comer",
+      "created_at": 1592168488556
+    }
+  ]
+}
