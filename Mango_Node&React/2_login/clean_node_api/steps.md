@@ -5,6 +5,9 @@ Aula 3 - Utilizando Mocks
 1. git commit --amend --no-edit
 2. git commit -m "type: description"
 3. git c - Commit ===== git s - Status ===== git l - Log
+4. git add .
+5. git commit -m "message"
+6. git push
 
 # Pacotes
 
