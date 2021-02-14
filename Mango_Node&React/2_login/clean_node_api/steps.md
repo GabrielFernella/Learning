@@ -7,7 +7,8 @@ Aula 3 - Utilizando Mocks
 3. git c - Commit ===== git s - Status ===== git l - Log
 4. git add .
 5. git commit -m "message"
-6. git push
+6. git push (enviando os commits para o servidor)
+7. git pull  (Buscando as alterações externas para seu projeto local)
 
 # Pacotes
 
