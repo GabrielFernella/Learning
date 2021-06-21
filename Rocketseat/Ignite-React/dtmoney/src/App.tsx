@@ -1,17 +1,39 @@
-import { GlobalStyle } from "./styles/global";
-import { Header } from "./components/Header";
-import { Dashboard } from "./components/Dashboard";
+import { useState } from 'react';
+import Modal from 'react-modal';
+import { GlobalStyle } from './styles/global';
+import { Header } from './components/Header';
+import { Dashboard } from './components/Dashboard';
+import { NewTransactionModal } from './components/NewTransactionModal';
+
+Modal.setAppElement('#root');
 
 export function App() {
+  const [isNewTransactionModalOpen, setIsNewTransactionModalOpen] =
+    useState(false);
+
+  //quando é uma função que interage com botão, adicionamos handle no começo
+  function handleOpenNewTransactionModal() {
+    setIsNewTransactionModalOpen(true);
+  }
+
+  function handleCloseNewTransactionModal() {
+    setIsNewTransactionModalOpen(false);
+  }
+
   return (
     <>
-      <Header />
+      <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
       <Dashboard />
+
+      <NewTransactionModal
+        isOpen={isNewTransactionModalOpen}
+        onRequestClose={handleCloseNewTransactionModal}
+      />
+
       <GlobalStyle />
     </>
   );
 }
-
 
 /*
  "@typescript-eslint/eslint-plugin": "^4.3.0",
