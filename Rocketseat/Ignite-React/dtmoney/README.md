@@ -5,6 +5,7 @@
   4. yarn add miragejs
   5. yarn add axios
   6. yarn add react-modal && yarn add @types/react-modal -D
+  7. yarn add polished
 
 
 # Commands

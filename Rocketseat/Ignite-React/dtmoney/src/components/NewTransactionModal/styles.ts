@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { darken, transparentize } from 'polished';
 
 export const Container = styled.form`
-  h2{
+  h2 {
     color: var(--text-title);
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -21,7 +22,7 @@ export const Container = styled.form`
 
     //vc consegue pegar o elemento que esteja usando essa propriedade
     &::placeholder {
-      color: var(--text-body)
+      color: var(--text-body);
     }
 
     //Todo input que tiver um input antes
@@ -31,12 +32,12 @@ export const Container = styled.form`
   }
 
   //seleciona a tag cujo tenha essa propriedade
-  button[type="submit"] {
+  button[type='submit'] {
     width: 100%;
     padding: 0 1.5rem;
     height: 4rem;
     background: var(--green);
-    color: #FFF;
+    color: #fff;
     border-radius: 0.25;
     border: 0;
     font-size: 1rem;
@@ -49,6 +50,54 @@ export const Container = styled.form`
       filter: brightness(0.9);
     }
   }
+`;
 
+export const TransactionTypeContainer = styled.div`
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+`;
 
+interface RadioBoxProps {
+  isActive: boolean;
+  activeColor: 'green' | 'red';
+}
+
+const colors = {
+  green: '#33CC95',
+  red: '#E52E4D',
+};
+
+export const RadioBox = styled.button<RadioBoxProps>`
+  height: 4rem;
+  border: 1px solid #d7d7d7;
+  border-radius: 0.25rem;
+
+  background: ${props =>
+    props.isActive
+      ? transparentize(0.9, colors[props.activeColor])
+      : 'trasparent'};
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: ${darken(0.1, '#d7d7d7')};
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  span {
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: var(--text-title);
+  }
 `;
